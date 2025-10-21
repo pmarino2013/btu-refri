@@ -1,0 +1,71 @@
+---
+
+---
+
+<div
+  id="carousel"
+  class="carousel slide carousel-fade h-100 relative"
+  data-bs-ride="carousel"
+>
+  <div class="carousel-inner h-100">
+    <div class="carousel-item active h-100">
+      <img
+        src="https://res.cloudinary.com/dg3bw86m3/image/upload/v1761069048/BTU/aire5_interior_we1pmc.jpg"
+        class="d-block w-100 h-100"
+        alt="imagen aire interno"
+      />
+    </div>
+    <div class="carousel-item h-100">
+      <img
+        src="https://res.cloudinary.com/dg3bw86m3/image/upload/v1761069047/BTU/aire2_kficdv.jpg"
+        class="d-block w-100 h-100"
+        alt="equipo de aire acondicionado externo"
+      />
+    </div>
+    <div class="carousel-item h-100">
+      <img
+        src="https://res.cloudinary.com/dg3bw86m3/image/upload/v1761069048/BTU/aire6_piso_b3gbgr.jpg"
+        class="d-block w-100 h-100"
+        alt="equipo aire doble"
+      />
+    </div>
+
+    <div class="overlay">
+      <div class="d-flex align-items-center h-100 text-center text-white">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <h1>Bienvenido a BTU Refri</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
+                modi ex harum voluptate, soluta doloribus quia hic sit est vel
+                consequatur accusantium deserunt iusto accusamus asperiores quis
+                repellendus magni earum.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  #carousel {
+    position: relative;
+    height: 100%;
+
+    .carousel-item img {
+      filter: grayscale(0.8);
+      object-fit: cover;
+      object-position: top;
+    }
+  }
+
+  .overlay {
+    z-index: 1;
+    inset: 0;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+  }
+</style>
