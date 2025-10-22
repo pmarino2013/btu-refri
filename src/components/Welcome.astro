@@ -1,13 +1,23 @@
 ---
 import Carousel from "./Carousel.astro";
+import SectionIndexCards from "./SectionIndexCards.astro";
+import SectionIndexInfo from "./SectionIndexInfo.astro";
 ---
 
 <section class="h-100">
   <div class="container-fluid h-100">
     <div class="row h-100">
-      <div class="col p-0">
+      <div class="col p-0 h-100">
         <Carousel />
       </div>
     </div>
+  </div>
+  <div class="container">
+    <div class="row mt-5">
+      <div class="col">
+        <SectionIndexInfo />
+      </div>
+    </div>
+    <SectionIndexCards />
   </div>
 </section>

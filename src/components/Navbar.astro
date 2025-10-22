@@ -3,7 +3,7 @@ const { pathname } = Astro.url;
 console.log(pathname);
 ---
 
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
+<nav class="navbar navbar-expand-lg bg-nav">
   <div class="container">
     <a class="navbar-brand" href="#"><strong>BTU</strong> Refrigeración</a>
     <button
@@ -21,14 +21,16 @@ console.log(pathname);
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
         <li class="nav-item">
           <a
-            class={pathname === "/" ? "nav-link active" : "nav-link"}
+            class={pathname === "/" ? "nav-link  active" : "nav-link text-nav"}
             aria-current="page"
             href="/">Inicio</a
           >
         </li>
         <li class="nav-item">
           <a
-            class={pathname === "/service" ? "nav-link active" : "nav-link"}
+            class={pathname === "/service"
+              ? "nav-link  active"
+              : "nav-link text-nav"}
             href="/service">Servicios</a
           >
         </li>
@@ -38,8 +40,25 @@ console.log(pathname);
 </nav>
 
 <style>
-  .active {
+  .navbar-brand {
+    color: var(--gris-acero) !important;
+  }
+  ul.navbar-nav .nav-link {
+    color: var(--gris-acero) !important;
+    /* font-weight: bold; */
+    &:hover {
+      color: var(--azul-frio) !important;
+    }
+  }
+  .bg-nav {
+    background-color: var(--verde-menta);
+  }
+  .nav-link:hover {
+    color: var(--azul-frio) !important;
+  }
+  ul.navbar-nav .nav-link.active {
     color: rgba(0, 140, 255, 0.884) !important;
-    text-decoration: underline;
+    /* text-decoration: underline; */
+    font-weight: bold;
   }
 </style>
