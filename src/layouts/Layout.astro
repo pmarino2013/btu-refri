@@ -15,7 +15,10 @@ const { title, description } = Astro.props;
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="description" content={description} />
     <meta name="generator" content={Astro.generator} />
-
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
     <title>{title}</title>
   </head>
   <body>
@@ -24,10 +27,10 @@ const { title, description } = Astro.props;
     </header>
 
     <slot />
+    <footer>
+      <Footer />
+    </footer>
   </body>
-  <footer>
-    <Footer />
-  </footer>
   <script
     is:inline
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
@@ -36,17 +39,16 @@ const { title, description } = Astro.props;
 </html>
 
 <style>
-  html,
-  body {
-    margin: 0;
-    width: 100%;
-    height: 100vh;
-  }
   :root {
     --azul-hielo: #e6f7ff;
     --azul-frio: #007acc;
     --gris-claro: #f2f2f2;
     --gris-acero: #4d4d4d; /*texto*/
     --verde-menta: #a8e6cf;
+  }
+  html,
+  body {
+    margin: 0;
+    width: 100%;
   }
 </style>
