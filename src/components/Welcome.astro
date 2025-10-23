@@ -1,6 +1,7 @@
 ---
 import Carousel from "./Carousel.astro";
 import SectionIndexCards from "./SectionIndexCards.astro";
+import SectionIndexFinal from "./SectionIndexFinal.astro";
 import SectionIndexInfo from "./SectionIndexInfo.astro";
 ---
 
@@ -18,6 +19,25 @@ import SectionIndexInfo from "./SectionIndexInfo.astro";
         <SectionIndexInfo />
       </div>
     </div>
+    <div class="row mt-5 mb-3">
+      <div class="col text-center">
+        <img
+          src="/icono_soporte.png"
+          alt="icono de soporte técnico"
+          class="img-subtitle"
+        />
+        <h2>Servicios ofrecidos</h2>
+      </div>
+    </div>
     <SectionIndexCards />
   </div>
+  <div class="container-fluid">
+    <SectionIndexFinal />
+  </div>
 </section>
+
+<style>
+  .img-subtitle {
+    width: 50px;
+  }
+</style>
