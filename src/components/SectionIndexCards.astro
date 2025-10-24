@@ -6,7 +6,7 @@ import { servicios } from "../data/datos";
   {
     servicios.map((item) => (
       <div class="col d-flex justify-content-center ">
-        <div class="card text-center" style="width: 18rem;">
+        <div class="card text-center fade-in">
           <div class="d-flex justify-content-center mt-3">
             <img src={item.icon} class="card-img-top" alt={item.servicio} />
           </div>
@@ -25,6 +25,26 @@ import { servicios } from "../data/datos";
     ))
   }
 </div>
+
+<script is:inline>
+  const elements = document.querySelectorAll(".fade-in");
+
+  const observer = new IntersectionObserver(
+    (entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("show");
+          observer.unobserve(entry.target); // deja de observar una vez mostrado
+        }
+      });
+    },
+    {
+      threshold: 0.2, // se activa cuando el 20% del elemento está visible
+    }
+  );
+
+  elements.forEach((el) => observer.observe(el));
+</script>
 
 <style>
   .card img {
