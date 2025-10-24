@@ -6,6 +6,8 @@
   id="carousel"
   class="carousel slide carousel-fade h-100 relative"
   data-bs-ride="carousel"
+  data-bs-interval="4000"
+  data-bs-pause="false"
 >
   <div class="carousel-inner h-100">
     <div class="carousel-item active h-100">
@@ -34,15 +36,19 @@
       <div class="d-flex align-items-center h-100 text-center text-white">
         <div class="container">
           <div class="row">
-            <div class="col-12">
-              <h1>Bienvenido a BTU Refri</h1>
+            <div
+              class="col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-6 text-lg-start fade-in"
+            >
+              <h1>Bienvenido a BTU</h1>
+              <h3>Refrigeración y Electricidad</h3>
             </div>
-            <div class="col">
+            <div
+              class="col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-6 mt-3 text-lg-start fade-in"
+            >
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
-                modi ex harum voluptate, soluta doloribus quia hic sit est vel
-                consequatur accusantium deserunt iusto accusamus asperiores quis
-                repellendus magni earum.
+                <strong>Instalamos, reparamos y optimizamos</strong>
+                sistemas de refrigeración y electricidad con puntualidad, eficiencia
+                y compromiso.<br /> Tu confort y seguridad, en manos expertas.
               </p>
             </div>
           </div>
@@ -69,5 +75,14 @@
     inset: 0;
     position: absolute;
     background: rgba(0, 0, 0, 0.548);
+  }
+
+  @media (min-width: 1024px) {
+    .overlay h1 {
+      font-size: 3rem;
+    }
+    .overlay p {
+      font-size: 1.2rem;
+    }
   }
 </style>
