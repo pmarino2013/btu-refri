@@ -35,16 +35,12 @@
     <div class="overlay">
       <div class="d-flex align-items-center h-100 text-center text-white">
         <div class="container">
-          <div class="row">
+          <div class="row fade-in">
             <div
               class="col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-6 text-lg-start fade-in"
             >
               <h1>Bienvenido a BTU</h1>
               <h3>Refrigeración y Electricidad</h3>
-            </div>
-            <div
-              class="col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-6 mt-3 text-lg-start fade-in"
-            >
               <p>
                 <strong>Instalamos, reparamos y optimizamos</strong>
                 sistemas de refrigeración y electricidad con puntualidad, eficiencia
@@ -68,6 +64,18 @@
       object-fit: cover;
       object-position: top;
     }
+  }
+  .bg-info.bg-opacity-25 {
+    backdrop-filter: blur(5px);
+  }
+
+  .img-electricista {
+    width: 100%;
+    /* redondear la imagen achicar su altura y que no deforme el contenedor. que tenga el mismo alto que el contenedor del texto */
+    height: 300px;
+    border-radius: 10px;
+    object-fit: cover;
+    filter: opacity(0.8);
   }
 
   .overlay {
