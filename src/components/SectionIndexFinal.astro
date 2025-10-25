@@ -4,26 +4,39 @@
 
 <div class="row fondo">
   <div class="col-12 col-md-6">
-    <img
-      class="img-banner"
-      src="https://res.cloudinary.com/dg3bw86m3/image/upload/v1761225452/BTU/aire_banner_zdf8w8.png"
-      alt="aire acondicionado"
-    />
+    <picture class="d-flex justify-content-center align-items-center h-100">
+      <!-- For very large screens -->
+      <source
+        srcset="https://res.cloudinary.com/dg3bw86m3/image/upload/v1761322436/BTU/trabajando_pu8ppn.png"
+        media="(min-width: 1024px)"
+      />
+
+      <!-- For medium screens -->
+      <!-- <source srcset="image-medium.jpg" media="(min-width: 768px)"> -->
+
+      <!-- Fallback image for browsers that don't support <picture> -->
+      <img
+        class="img-banner"
+        src="https://res.cloudinary.com/dg3bw86m3/image/upload/v1761225452/BTU/aire_banner_zdf8w8.png"
+        alt="aire acondicionado"
+      />
+    </picture>
   </div>
   <div class="col-12 col-md-6">
-    <div class="d-flex justify-content-center mb-2">
+    <div class="d-flex justify-content-center mb-2 mt-md-3">
       <img src="/icono_car.png" alt="icono de camioncito" class="img-icono" />
     </div>
-    <h3 class="text-center">Servicio a Domicilio</h3>
-    <p>
-      Entendemos que tu tiempo y tu comodidad son valiosos. Por eso ofrecemos <strong
-        >servicios a domicilio</strong
-      > para que no tengas que moverte ni preocuparte. Ya sea para trabajos de <strong
-        >refrigeración</strong
-      > o <strong>electricidad</strong>, llegamos a tu hogar, comercio o
-      industria con todo lo necesario para resolver el problema de forma rápida
-      y segura.
-    </p>
+    <div class="p-3">
+      <h3 class="text-center">Servicio a Domicilio</h3>
+      <p>
+        Entendemos que tu tiempo y tu comodidad son valiosos. Por eso ofrecemos <strong
+          >servicios a domicilio</strong
+        > para que no tengas que moverte ni preocuparte. Ya sea para trabajos de
+        <strong>refrigeración</strong> o <strong>electricidad</strong>, llegamos
+        a tu hogar, comercio o industria con todo lo necesario para resolver el
+        problema de forma rápida y segura.
+      </p>
+    </div>
   </div>
 </div>
 <style>
@@ -36,5 +49,15 @@
   }
   .img-icono {
     width: 100px;
+  }
+
+  @media (min-width: 1024px) {
+    .img-banner {
+      width: 350px;
+      height: 100%;
+    }
+    p {
+      font-size: 1.2rem;
+    }
   }
 </style>

@@ -6,6 +6,8 @@
   id="carousel"
   class="carousel slide carousel-fade h-100 relative"
   data-bs-ride="carousel"
+  data-bs-interval="4000"
+  data-bs-pause="false"
 >
   <div class="carousel-inner h-100">
     <div class="carousel-item active h-100">
@@ -33,16 +35,16 @@
     <div class="overlay">
       <div class="d-flex align-items-center h-100 text-center text-white">
         <div class="container">
-          <div class="row">
-            <div class="col-12">
-              <h1>Bienvenido a BTU Refri</h1>
-            </div>
-            <div class="col">
+          <div class="row fade-in">
+            <div
+              class="col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-6 text-lg-start fade-in"
+            >
+              <h1>Bienvenido a BTU</h1>
+              <h3>Refrigeración y Electricidad</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
-                modi ex harum voluptate, soluta doloribus quia hic sit est vel
-                consequatur accusantium deserunt iusto accusamus asperiores quis
-                repellendus magni earum.
+                <strong>Instalamos, reparamos y optimizamos</strong>
+                sistemas de refrigeración y electricidad con puntualidad, eficiencia
+                y compromiso.<br /> Tu confort y seguridad, en manos expertas.
               </p>
             </div>
           </div>
@@ -63,11 +65,32 @@
       object-position: top;
     }
   }
+  .bg-info.bg-opacity-25 {
+    backdrop-filter: blur(5px);
+  }
+
+  .img-electricista {
+    width: 100%;
+    /* redondear la imagen achicar su altura y que no deforme el contenedor. que tenga el mismo alto que el contenedor del texto */
+    height: 300px;
+    border-radius: 10px;
+    object-fit: cover;
+    filter: opacity(0.8);
+  }
 
   .overlay {
     z-index: 1;
     inset: 0;
     position: absolute;
     background: rgba(0, 0, 0, 0.548);
+  }
+
+  @media (min-width: 1024px) {
+    .overlay h1 {
+      font-size: 3rem;
+    }
+    .overlay p {
+      font-size: 1.2rem;
+    }
   }
 </style>

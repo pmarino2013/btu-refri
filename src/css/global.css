@@ -12,3 +12,26 @@
   opacity: 1;
   transform: translateY(0);
 }
+
+.btn-whatsapp {
+  background: #25d366;
+
+  border-radius: 50%;
+  width: 56px;
+  height: 56px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  transition: box-shadow 0.2s, transform 0.2s;
+  position: fixed;
+  font-size: 2rem;
+  bottom: 30px;
+  right: 20px;
+  z-index: 9999999;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  & i {
+    color: white;
+  }
+}

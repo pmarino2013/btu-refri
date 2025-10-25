@@ -3,19 +3,19 @@
 ---
 
 <div class="container-fluid">
-  <div class="row justify-content-center text-center my-5">
-    <div class="col-12">
+  <div class="row justify-content-center align-items-center text-center my-5">
+    <div class="col-12 col-md-4">
       <h3 class="fs-1">BTU Refri</h3>
     </div>
-    <div class="col-12">
+    <div class="col-12 col-md-4">
       <ul>
         <li><a href="">Sobre nosotros</a></li>
         <li><a href="">Contacto</a></li>
         <li><a href="">Servicios</a></li>
       </ul>
     </div>
-    <div class="col-12">
-      <div class="d-flex gap-3 justify-content-center">
+    <div class="col-12 col-md-4">
+      <div class="d-flex gap-4 justify-content-center">
         <i class="bi bi-instagram icon"></i>
         <i class="bi bi-facebook icon"></i>
       </div>
@@ -28,11 +28,23 @@
     padding: 0;
     list-style: none;
     & li a {
+      color: var(--azul-frio);
       text-decoration: none;
       font-size: 1.3rem;
+      transition: color 0.3s ease;
+      &:hover {
+        color: var(--gris-acero);
+      }
     }
   }
   .icon {
     font-size: 42px;
+    transition:
+      font-size 0.3s ease,
+      color 0.3s ease;
+    &:hover {
+      font-size: 47px;
+      color: var(--azul-frio);
+    }
   }
 </style>

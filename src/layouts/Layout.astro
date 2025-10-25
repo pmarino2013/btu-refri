@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar.astro";
 import Footer from "../components/Footer.astro";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../css/global.css";
+import BtnWhatsapp from "../components/react/BtnWhatsapp";
 
 const { title, description } = Astro.props;
 ---
@@ -30,6 +31,10 @@ const { title, description } = Astro.props;
     <footer>
       <Footer />
     </footer>
+
+    <div>
+      <BtnWhatsapp />
+    </div>
   </body>
   <script
     is:inline
