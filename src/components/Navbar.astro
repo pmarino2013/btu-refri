@@ -5,7 +5,9 @@ console.log(pathname);
 
 <nav class="navbar navbar-expand-lg bg-nav">
   <div class="container">
-    <a class="navbar-brand" href="#"><strong>BTU</strong> Refrigeración</a>
+    <a class="navbar-brand" href="#">
+      <img src="/logo.png" alt="logo de la empresa BTU" />
+    </a>
     <button
       class="navbar-toggler"
       type="button"
@@ -42,6 +44,9 @@ console.log(pathname);
 <style>
   .navbar-brand {
     color: var(--gris-acero) !important;
+    & img {
+      width: 3.5rem;
+    }
   }
   ul.navbar-nav .nav-link {
     color: var(--gris-acero) !important;

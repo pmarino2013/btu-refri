@@ -1,18 +1,61 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import ServiceCardBanner from "../components/ServiceCardBanner.astro";
+import { servicios } from "../data/datos.js";
 ---
 
 <Layout
   title="Servicios - Btu refri"
-  description="Nuestros servicios de refrigeración"
+  description="Nuestros servicios de refrigeración y electricidad a domicilio"
 >
   <section>
     <div class="container">
       <div class="row">
+        <div class="col-12">
+          <img
+            src="https://res.cloudinary.com/dg3bw86m3/image/upload/v1761412633/BTU/trabajando_servicios_xinakm.jpg"
+            alt="Trabajando en electricidad"
+            class="img-trabajando"
+          />
+        </div>
+        <div class="col-12 mt-3">
+          <p>
+            En <strong>BTU</strong>, ofrecemos soluciones técnicas confiables
+            para hogares, comercios e industrias. Nos especializamos en <strong
+              >instalación, mantenimiento y reparación</strong
+            > de sistemas de refrigeración y electricidad, combinando experiencia,
+            puntualidad y compromiso en cada trabajo. <br />Trabajamos con
+            materiales certificados, respetamos las normas de seguridad y
+            brindamos atención personalizada en cada visita.<br />
+            <strong
+              >Servicio a domicilio, garantía de calidad y resultados que se
+              sienten.</strong
+            >
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col text-center">
+          <h1>❄️Servicios❄️</h1>
+        </div>
+      </div>
+      <div class="row">
         <div class="col">
-          <h1>Servicio Page</h1>
+          {
+            servicios.map((item) => (
+              <ServiceCardBanner key={item.id} servicio={item} />
+            ))
+          }
         </div>
       </div>
     </div>
   </section>
 </Layout>
+
+<style>
+  .img-trabajando {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+  }
+</style>
