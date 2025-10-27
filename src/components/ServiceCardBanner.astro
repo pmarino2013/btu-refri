@@ -5,7 +5,7 @@ const { servicio } = Astro.props;
 <div class="my-3 fade-in">
   <div
     class="banner-card w-100 d-flex align-items-center justify-content-center"
-    style={`background-size: cover; background-position: center;background-image:url(${servicio.imagen})`}
+    style={`background-size: cover;background-image:url(${servicio.imagen})`}
   >
     <div class="container-text">
       <span class="text-white text-center">
@@ -28,6 +28,8 @@ const { servicio } = Astro.props;
     background-blend-mode: overlay;
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
   }
   .container-text {
     position: absolute;
