@@ -11,7 +11,7 @@ import { servicios } from "../data/datos.js";
   <section>
     <div class="container">
       <div class="row">
-        <div class="col-12 fade-in">
+        <div class="col-12 col-md-6 fade-in">
           <!-- colocar filtros a la imagen para que se vea más profesional  -->
 
           <img
@@ -20,7 +20,7 @@ import { servicios } from "../data/datos.js";
             class="img-trabajando"
           />
         </div>
-        <div class="col-12 mt-3">
+        <div class="col-12 col-md-6 mt-3 text-principal">
           <p>
             En <strong>BTU</strong>, ofrecemos soluciones técnicas confiables
             para hogares, comercios e industrias. Nos especializamos en <strong
@@ -36,13 +36,13 @@ import { servicios } from "../data/datos.js";
           </p>
         </div>
       </div>
-      <div class="row">
+      <div class="row mt-5">
         <div class="col text-center">
           <h1>❄️Servicios❄️</h1>
         </div>
       </div>
-      <div class="row">
-        <div class="col">
+      <div class="row mb-5">
+        <div class="col px-md-5">
           {
             servicios.map((item) => (
               <ServiceCardBanner key={item.id} servicio={item} />
@@ -56,10 +56,19 @@ import { servicios } from "../data/datos.js";
 
 <style>
   /* estilo de la imagen principal para que se vea más profesional  */
-
+  section {
+    margin-top: 100px;
+  }
   .img-trabajando {
     width: 100%;
     height: 350px;
     object-fit: cover;
+  }
+
+  @media (min-width: 1024px) {
+    .text-principal {
+      /* text-align: justify; */
+      font-size: 1.2rem;
+    }
   }
 </style>
