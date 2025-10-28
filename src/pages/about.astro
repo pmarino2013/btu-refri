@@ -3,8 +3,8 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout
-  title="Contacto - BTU refri"
-  description="Ponte en contacto con nosotros para servicios de refrigeración y electricidad a domicilio"
+  title="Sobre nosotros - BTU refri"
+  description="Conoce más sobre BTU refri, expertos en refrigeración y electricidad"
 >
   <div class="container">
     <div class="row">
@@ -37,7 +37,7 @@ import Layout from "../layouts/Layout.astro";
           destacándonos por nuestra innovación, profesionalismo y cercanía.
         </p> -->
       </div>
-      <div class="col img-trabajador mb-3">
+      <div class="col img-trabajador mb-3 fade-in">
         <img
           src="https://res.cloudinary.com/dg3bw86m3/image/upload/v1761584981/BTU/instalando_cables_woyktk.jpg"
           alt="trabajador en la parte eléctrica"
@@ -51,7 +51,7 @@ import Layout from "../layouts/Layout.astro";
       </div>
     </div>
     <div class="row">
-      <div class="col d-grid">
+      <div class="col d-grid d-md-flex">
         <a href="/service" class="btn btn-success">Conoce nuestros servicios</a>
       </div>
     </div>
@@ -85,7 +85,7 @@ import Layout from "../layouts/Layout.astro";
     }
   }
 
-  @media (min-width: 1024px) {
+  @media (min-width: 768px) {
     .img-trabajador {
       height: 500px;
     }
