@@ -1,0 +1,96 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout
+  title="Sobre nosotros - BTU refri"
+  description="Conoce más sobre BTU refri, expertos en refrigeración y electricidad"
+>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-6">
+        <h1>Sobre nosotros</h1>
+        <p>
+          En <strong>BTU Refrigeración y Electricidad</strong> llevamos años brindando
+          soluciones técnicas confiables para hogares, comercios e industrias. Nos
+          especializamos en la instalación, mantenimiento y reparación de aires acondicionados,
+          freezers y sistemas eléctricos, combinando precisión, rapidez y compromiso
+          en cada servicio.
+        </p>
+        <p>
+          Nuestro equipo está formado por técnicos capacitados que trabajan con
+          materiales certificados, respetando las normas de seguridad y
+          ofreciendo atención personalizada en cada visita. Ya sea que necesites
+          climatizar un ambiente, reparar un equipo de frío o resolver una falla
+          eléctrica, en BTU respondemos con eficiencia y garantía
+        </p>
+        <hr />
+        <h3>Misión</h3>
+        <p>
+          Brindar servicios técnicos de refrigeración y electricidad con
+          excelencia, puntualidad y trato humano, mejorando el confort y la
+          seguridad de nuestros clientes.
+        </p>
+        <!-- <h3>Visión</h3>
+        <p>
+          Ser referentes en soluciones térmicas y eléctricas en la región,
+          destacándonos por nuestra innovación, profesionalismo y cercanía.
+        </p> -->
+      </div>
+      <div class="col img-trabajador mb-3 fade-in">
+        <img
+          src="https://res.cloudinary.com/dg3bw86m3/image/upload/v1761584981/BTU/instalando_cables_woyktk.jpg"
+          alt="trabajador en la parte eléctrica"
+        />
+        <div class="overlay">
+          <h3 class="text-center">
+            En BTU, cada instalación es una promesa de confort, seguridad y
+            confianza.
+          </h3>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col d-grid d-md-flex">
+        <a href="/service" class="btn btn-success">Conoce nuestros servicios</a>
+      </div>
+    </div>
+  </div>
+</Layout>
+
+<style>
+  .container {
+    margin-top: 100px;
+  }
+
+  .img-trabajador {
+    position: relative;
+    width: 100%;
+    height: 300px;
+
+    & img {
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: grayscale(0.8);
+    }
+    & .overlay {
+      display: flex;
+      align-items: center;
+      position: absolute;
+      inset: 0;
+      color: var(--gris-claro);
+      background-color: rgba(0, 0, 0, 0.457);
+    }
+  }
+
+  @media (min-width: 768px) {
+    .img-trabajador {
+      height: 500px;
+    }
+    .overlay {
+      padding: 0 2rem;
+    }
+  }
+</style>
