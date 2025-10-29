@@ -1,0 +1,74 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { servicios } from "../../data/datos.js";
+
+export async function getStaticPaths() {
+  return [
+    { params: { service: "instalacion-de-aires-acondicionados" } },
+    { params: { service: "reparacion-de-aires-acondicionados" } },
+    { params: { service: "reparacion-e-instalacion-de-freezers" } },
+    { params: { service: "instalacion-electrica" } },
+  ];
+}
+
+const { service } = Astro.params;
+
+const item = servicios.find((s) => s.url === `/services/${service}`);
+const { servicio, fotos, textos } = item;
+---
+
+<Layout
+  title="Servicios - Btu refri"
+  description="Nuestros servicios de refrigeración y electricidad a domicilio"
+>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h1>{servicio}</h1>
+      </div>
+    </div>
+    {
+      fotos.map((foto, index) => (
+        <div class="row mt-3 fade-in px-md-5 py-md-3 ">
+          <div
+            class={`col-12 col-md-8 order-md-${index + (1 % 2) === 0 ? "1" : "2"}`}
+          >
+            <img src={foto} alt={"foto " + (index + 1)} />
+          </div>
+          <div
+            class={`col-12 col-md-4 order-md-${index % 2 === 0 ? "2" : "1"}`}
+          >
+            <p class="mt-4 mt-md-0">{textos[index]}</p>
+          </div>
+        </div>
+      ))
+    }
+
+    <div class="row">
+      <div class="col d-grid d-md-flex justify-content-md-center mt-3 mt-md-5">
+        <a href="/service" class="btn btn-success">Volver a Servicios</a>
+      </div>
+    </div>
+  </div>
+
+  <style>
+    div.container {
+      margin-top: 100px;
+      margin-bottom: 100px;
+    }
+
+    img {
+      height: 300px;
+      object-fit: cover;
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    }
+
+    @media (min-width: 768px) {
+      p {
+        font-size: 1.2rem;
+      }
+    }
+  </style>
+</Layout>
