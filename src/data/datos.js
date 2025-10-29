@@ -30,7 +30,7 @@ const servicios = [
       "https://res.cloudinary.com/dg3bw86m3/image/upload/v1761675806/BTU/reparacion_aire_3_lkfqsd.jpg",
     ],
     textos: [
-      "Realizamos reparaciones a domicilio para aires acondicionados de todos los tipos: split, multisplit, piso-techo y de ventana. Diagnóstico rápido en sitio con herramientas calibradas, detección de fugas, verificación de compresor, motorización del ventilador, chequeo de placa electrónica y mediciones de presión y temperatura. Los técnicos actúan según protocolo de seguridad y reemplazan componentes con repuestos homologados cuando es necesario.",
+      "Realizamos reparaciones a domicilio para aires acondicionados de todos los tipos: split, multisplit, piso-techo y de ventana. Diagnóstico rápido en sitio con herramientas calibradas, detección de fugas, verificación de compresor, motorización del ventilador, chequeo de placa electrónica y mediciones de presión y temperatura.",
       "El servicio incluye comunicación previa por WhatsApp para enviar fotos o videos del equipo, coordinación de horario y presupuesto estimado; evaluación presencial, reparación y pruebas de funcionamiento hasta dejar el equipo operando correctamente. Entregamos informe técnico y ofrecemos garantía por la mano de obra y los repuestos instalados para mayor tranquilidad del cliente.",
       "Atendemos urgencias y mantenimientos programados, priorizando la rapidez para minimizar interrupciones y optimizar el rendimiento y consumo energético del equipo. Coordiná la visita por WhatsApp y programamos la intervención con disponibilidad y un presupuesto claro.",
     ],
@@ -42,10 +42,14 @@ const servicios = [
     imagen:
       "https://res.cloudinary.com/dg3bw86m3/image/upload/v1761577678/BTU/repara_freezer_c46ckw.png",
     url: "/services/reparacion-e-instalacion-de-freezers",
-    fotos: [],
+    fotos: [
+      "https://res.cloudinary.com/dg3bw86m3/image/upload/v1761702108/BTU/freezer_1_v2xtdn.jpg",
+      "https://res.cloudinary.com/dg3bw86m3/image/upload/v1761702109/BTU/freezer_2_kgcikz.jpg",
+      "https://res.cloudinary.com/dg3bw86m3/image/upload/v1761702109/BTU/freezer_3_vwcnc1.jpg",
+    ],
     textos: [
       "Ofrecemos servicio a domicilio de instalación y reparación de freezers para hogares, comercios e industrias, abarcando modelos upright, chest y cámaras frigoríficas. Realizamos montaje profesional, colocación de bandejas y estantes, conexión eléctrica segura y puesta a punto para garantizar temperatura estable y eficiencia desde el primer día.",
-      "En las reparaciones realizamos diagnóstico completo en sitio: detección de fugas, revisión de compresor, motor del ventilador, termostato, evaporador y sistema de drenaje; medimos presiones y temperaturas y reemplazamos repuestos homologados cuando es necesario. Nuestros técnicos trabajan con protocolos de seguridad, entregan informe técnico y ofrecen garantía por escrito sobre mano de obra y componentes.",
+      "En las reparaciones realizamos diagnóstico completo en sitio: detección de fugas, revisión de compresor, motor del ventilador, termostato, evaporador y sistema de drenaje; medimos presiones y temperaturas y reemplazamos repuestos homologados cuando es necesario.",
       "Coordiná la visita por WhatsApp para recibir un diagnóstico inicial, presupuesto estimado y disponibilidad horaria. Atendemos urgencias y mantenimientos programados, priorizando soluciones rápidas que minimicen pérdidas de stock y aseguren la conservación correcta de tus productos.",
     ],
   },
